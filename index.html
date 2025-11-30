@@ -27,11 +27,11 @@
                     },
                     colors: {
                         karga: {
-                            blue: '#2980B9',   /* Pasifik Mavisi - Güven */
-                            red: '#FF4757',    /* Nar Çiçeği - Enerji/Vurgu */
-                            dark: '#2C3E50',   /* Antrasit - Ana Metin/Logo */
-                            gray: '#BDC3C7',   /* Gümüş Gri - Detay */
-                            bg: '#F5F6FA',     /* Kırık Beyaz - Arkaplan */
+                            blue: '#2980b9',   /* Pasifik Mavisi */
+                            red: '#c0392b',    /* Pomegranate / Kiremit - Accent */
+                            dark: '#111111',   /* Vampire Black - Ana Metin/Logo */
+                            gray: '#7f8c8d',   /* Concrete / Beton Grisi - Detay */
+                            bg: '#F5F6FA',     /* Kırık Beyaz - Arkaplan (Kontrast için hafif tonlu tutuldu) */
                         }
                     }
                 }
@@ -42,8 +42,9 @@
     <style>
         /* Custom Styles specifically for the construction feel */
         .hero-pattern {
-            background-color: #2C3E50;
-            background-image: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-color: #111111;
+            /* Updated gradient to match new dark color #111111 (RGB: 17, 17, 17) */
+            background-image: linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -54,7 +55,7 @@
             display: block;
             width: 60px;
             height: 4px;
-            background-color: #FF4757;
+            background-color: #c0392b; /* Updated to new red */
             margin-top: 10px;
             border-radius: 2px;
         }
@@ -114,7 +115,7 @@
                 Karga Cooperation: İnşaatın Aklı. Teknik mükemmeliyet ve stratejik yönetim ile projelerinize değer katıyoruz.
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#hizmetler" class="px-8 py-4 bg-karga-red text-white font-bold rounded-lg hover:bg-red-600 transition-all shadow-lg hover:shadow-red-500/40">
+                <a href="#hizmetler" class="px-8 py-4 bg-karga-red text-white font-bold rounded-lg hover:bg-red-800 transition-all shadow-lg hover:shadow-red-500/40">
                     Hizmetlerimizi Keşfedin
                 </a>
                 <a href="#iletisim" class="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-karga-dark transition-all">
@@ -144,12 +145,12 @@
                         <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
                             <i class="fa-solid fa-eye text-karga-blue text-2xl mb-2"></i>
                             <h3 class="font-bold text-karga-dark">Vizyonumuz</h3>
-                            <p class="text-xs text-gray-500 mt-1">Bilimsel, yenilikçi ve ekonomik çözümler sunarak sürdürülebilir değer yaratmak.</p>
+                            <p class="text-xs text-karga-gray mt-1">Bilimsel, yenilikçi ve ekonomik çözümler sunarak sürdürülebilir değer yaratmak.</p>
                         </div>
                         <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
                             <i class="fa-solid fa-bullseye text-karga-red text-2xl mb-2"></i>
                             <h3 class="font-bold text-karga-dark">Misyonumuz</h3>
-                            <p class="text-xs text-gray-500 mt-1">Kritik alanları analiz ederek, en uygun çözümleri nokta atışıyla ulaştırmak.</p>
+                            <p class="text-xs text-karga-gray mt-1">Kritik alanları analiz ederek, en uygun çözümleri nokta atışıyla ulaştırmak.</p>
                         </div>
                     </div>
                 </div>
@@ -274,7 +275,7 @@
                 <!-- Why Us Summary Box -->
                 <div class="bg-karga-dark text-white p-8 rounded-2xl shadow-xl flex flex-col justify-center items-center text-center">
                     <h3 class="text-2xl font-bold mb-4">Neden Karga?</h3>
-                    <ul class="text-sm space-y-3 text-gray-300 text-left w-full pl-4">
+                    <ul class="text-sm space-y-3 text-karga-gray text-left w-full pl-4">
                         <li class="flex items-start"><i class="fa-solid fa-check text-karga-red mt-1 mr-2"></i> Uluslararası standartlar</li>
                         <li class="flex items-start"><i class="fa-solid fa-check text-karga-red mt-1 mr-2"></i> Bağımsız ve şeffaf yapı</li>
                         <li class="flex items-start"><i class="fa-solid fa-check text-karga-red mt-1 mr-2"></i> Ölçülebilir performans</li>
@@ -349,7 +350,7 @@
                         </div>
                         <span class="text-2xl font-bold">KARGA</span>
                     </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    <p class="text-karga-gray text-sm leading-relaxed mb-6">
                         Bilimsel, yenilikçi ve ekonomik çözümler sunarak projelerin tüm aşamalarında sürdürülebilir değer yaratıyoruz.
                     </p>
                     <div class="flex space-x-4">
@@ -362,7 +363,7 @@
                 <!-- Quick Links -->
                 <div>
                     <h4 class="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Hızlı Erişim</h4>
-                    <ul class="space-y-3 text-sm text-gray-400">
+                    <ul class="space-y-3 text-sm text-karga-gray">
                         <li><a href="#hakkimizda" class="hover:text-white transition-colors">Hakkımızda</a></li>
                         <li><a href="#hizmetler" class="hover:text-white transition-colors">Hizmetlerimiz</a></li>
                         <li><a href="#yetkinlikler" class="hover:text-white transition-colors">Teknoloji & BIM</a></li>
@@ -373,7 +374,7 @@
                 <!-- Contact Info -->
                 <div>
                     <h4 class="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">İletişim</h4>
-                    <ul class="space-y-4 text-sm text-gray-400">
+                    <ul class="space-y-4 text-sm text-karga-gray">
                         <li class="flex items-start">
                             <i class="fa-solid fa-location-dot mt-1 mr-3 text-karga-red"></i>
                             <span>İnönü Cd. No:26, Anadolu Hisarı,<br>34810 Beykoz/İstanbul</span>
