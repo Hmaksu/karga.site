@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karga Cooperation | Construction Project Management</title>
+    <meta name="description" content="Karga Cooperation is an independent consultancy specializing in professional engineering, project management, and digital construction solutions.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Rubik', 'sans-serif'],
+                    },
+                    colors: {
+                        karga: {
+                            blue: '#2980b9',
+                            red: '#c0392b',
+                            dark: '#111111',
+                            gray: '#7f8c8d',
+                            bg: '#F5F6FA',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-pattern {
+            background-color: #111111;
+            background-image: linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .section-header::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #c0392b;
+            margin-top: 10px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-karga-bg text-karga-dark font-sans leading-relaxed">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-karga-dark text-white flex items-center justify-center rounded-lg group-hover:bg-karga-blue transition-colors">
+                    <img style="border-radius: 20px" src="https://karga.site/visual-identity/Emblem-Minimalist-White.png">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold tracking-tight text-karga-dark group-hover:text-karga-blue transition-colors">KARGA</span>
+                    <span class="text-xs font-medium text-karga-gray tracking-widest uppercase">Cooperation</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium text-gray-600">
+                <a href="https://www.karga.site/en/about" class="hover:text-karga-blue transition-colors">About Us</a>
+                <a href="https://www.karga.site/en/our-team" class="hover:text-karga-blue transition-colors">Our Team</a>
+                <a href="https://www.karga.site/en/visual-identity" class="hover:text-karga-blue transition-colors">Brand Identity</a>
+                <a href="mailto:info@karga.site" class="px-5 py-2.5 bg-karga-blue text-white rounded-full hover:bg-sky-700 transition-colors shadow-lg shadow-blue-500/30">Contact</a>
+                <a href="https://www.karga.site/ekibimiz" class="hover:text-karga-blue transition-colors">Türkçe</a> 
+            </div>
+
+            <!-- Mobile Menu -->
+            <button class="md:hidden text-2xl text-karga-dark" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 shadow-lg">
+            <a href="https://www.karga.site/en/about" class="block py-2 text-gray-600">About Us</a>
+            <a href="https://www.karga.site/en/our-team" class="block py-2 text-gray-600">Our Team</a>
+            <a href="https://www.karga.site/en/visual-identity" class="block py-2 text-gray-600">Brand Identity</a>
+            <a href="mailto:info@karga.site" class="block py-2 mt-2 text-karga-blue font-bold">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <header class="hero-pattern h-screen flex items-center justify-center text-white relative">
+        <div class="container mx-auto px-6 text-center z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                <span class="text-karga-red">Our Team</span>
+            </h1>
+        </div>
+
+        <a href="#team" class="absolute bottom-10 animate-bounce text-white/50 hover:text-white transition-colors">
+            <i class="fa-solid fa-chevron-down text-2xl"></i>
+        </a>
+    </header>
+
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="py-20 bg-karga-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-karga-red font-bold tracking-widest uppercase text-sm mb-2 block">Professional Staff</span>
+                <h2 class="text-3xl font-bold text-karga-dark mb-4">Our Management Team</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A leadership team with multidisciplinary expertise.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Member 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://karga.site/ekibimiz/cengiz.png" alt="Team Member" style="margin: auto" class="h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform">
+                            <div class="flex justify-center space-x-3 text-white">
+                                <a href="https://www.linkedin.com/in/cengiz-mert-g%C3%B6ktan-a5a5b8186/" class="hover:text-karga-blue"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="mailto:cengiz.mert@karga.site" class="hover:text-karga-blue"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-karga-dark">Cengiz Mert Göktan</h3>
+                        <span class="text-karga-red text-sm font-medium block mb-3">Chief Executive Officer</span>
+                        <p class="text-gray-500 text-xs leading-relaxed">
+                            Expert in strategic leadership and corporate governance aligned with international standards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://karga.site/ekibimiz/ben.png" alt="Team Member" style="margin: auto" class="h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform">
+                            <div class="flex justify-center space-x-3 text-white">
+                                <a href="https://www.linkedin.com/in/hmaksu/" class="hover:text-karga-blue"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="mailto:mehmet.aksu@karga.site" class="hover:text-karga-blue"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-karga-dark">Mehmet Aksu</h3>
+                        <span class="text-karga-blue text-sm font-medium block mb-3">Chief Operating Officer</span>
+                        <p class="text-gray-500 text-xs leading-relaxed">
+                            Expert in operational design, process optimization, and efficiency management aligned with international standards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://karga.site/ekibimiz/mete.JPG" alt="Team Member" style="margin: auto" class="h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform">
+                            <div class="flex justify-center space-x-3 text-white">
+                                <a href="mailto:mete.kuzlak@karga.site" class="hover:text-karga-blue"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-karga-dark">Mete Kuzlak</h3>
+                        <span class="text-karga-gray text-sm font-medium block mb-3">Chief Financial Officer</span>
+                        <p class="text-gray-500 text-xs leading-relaxed">
+                            Expert in financial planning, resource management, and financial analysis aligned with international standards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://karga.site/ekibimiz/gemini.png" alt="Team Member" style="margin: auto" class="h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform">
+                            <div class="flex justify-center space-x-3 text-white">
+                                <a href="mailto:halime.geminigil@karga.site" class="hover:text-karga-blue"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-karga-dark">Halime Geminigil</h3>
+                        <span class="text-karga-gray text-sm font-medium block mb-3">Office Administrator</span>
+                        <p class="text-gray-500 text-xs leading-relaxed">
+                            Specialist in corporate communication, document management, and operational coordination.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://karga.site/ekibimiz/gemini2.png" alt="Team Member" style="margin: auto" class="h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform">
+                            <div class="flex justify-center space-x-3 text-white">
+                                <a href="#" class="hover:text-karga-blue"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="mailto:saniye.saniyeoglu@karga.site" class="hover:text-karga-blue"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-karga-dark">Saniye Saniyeoğlu</h3>
+                        <span class="text-karga-blue text-sm font-medium block mb-3">Office Assistant</span>
+                        <p class="text-gray-500 text-xs leading-relaxed">
+                            Specialist in food preparation, hygiene standards, and kitchen operational organization.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Member 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://karga.site/ekibimiz/cemil.jpg" alt="Team Member" style="margin: auto" class="h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform">
+                            <div class="flex justify-center space-x-3 text-white">
+                                <a href="mailto:info@karga.site" class="hover:text-karga-blue"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-karga-dark">Cemil Mırnav</h3>
+                        <span class="text-karga-gray text-sm font-medium block mb-3">Office Cat</span>
+                        <p class="text-gray-500 text-xs leading-relaxed">
+                            Our office cat who brings calm and joy to the workspace.<br>
+                            Note: Gets along well with crows.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-karga-dark text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-white text-karga-dark flex items-center justify-center rounded-lg">
+                            <img style="border-radius: 20px" src="https://karga.site/visual-identity/Emblem-Crow-Black.png">
+                        </div>
+                        <span class="text-2xl font-bold">KARGA</span>
+                    </div>
+                    <p class="text-karga-gray text-sm leading-relaxed mb-6">
+                        We create sustainable value through scientific, innovative, and cost-effective solutions at every stage of a project.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-karga-blue transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/karga_co/" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-karga-blue transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Quick Links</h4>
+                    <ul class="space-y-3 text-sm text-karga-gray">
+                        <li><a href="https://www.karga.site/en/about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="https://www.karga.site/en/our-team" class="hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="https://www.karga.site/en/visual-identity" class="hover:text-white transition-colors">Brand Identity</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block">Contact</h4>
+                    <ul class="space-y-4 text-sm text-karga-gray">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-location-dot mt-1 mr-3 text-karga-red"></i>
+                            <span>Anadolu Hisarı, Çınarlı Sk. No:15, 34810 Beykoz/İstanbul<br></span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-3 text-karga-red"></i>
+                            <a href="mailto:info@karga.site" class="hover:text-white transition-colors">info@karga.site</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-3 text-karga-red"></i>
+                            <span>+90 (212) 000 00 00</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
+                <p>&copy; 2025 Karga Cooperation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navbarHeight = document.getElementById('navbar').offsetHeight;
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - navbarHeight,
+                        behavior: 'smooth'
+                    });
+                }
+                
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.classList.add('bg-white');
+                nav.classList.remove('bg-white/95');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.add('bg-white/95');
+                nav.classList.remove('bg-white');
+            }
+        });
+    </script>
+
+</body>
+</html>
